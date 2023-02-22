@@ -10,7 +10,6 @@ class plate
         this.b = b;
     }
 }
-
 class box extends plate
 {
     int h;
@@ -19,7 +18,6 @@ class box extends plate
         this.h = h;
     }
 }
-
 class woodbox extends box
 {
     int thick;
@@ -28,7 +26,6 @@ class woodbox extends box
         this.thick = thick;
     }
 }
-
 public class q2{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
