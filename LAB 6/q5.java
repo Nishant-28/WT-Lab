@@ -15,15 +15,16 @@ public class q5 {
             this.b = b;
         }
         void print(){
-            System.out.println("a: " + a + " b: " + b);
+            System.out.println("a : " + a + " " + " b : " + b);
         }
     }
     public static void main(String[] args) {
         System.out.println("Enter the value of a : ");
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
+        int a = sc.nextInt(); // cin >> a;
         System.out.println("Enter the value of b : ");
         int b = sc.nextInt();
+
         derived d = new derived(a, b);
         d.print();
     }
