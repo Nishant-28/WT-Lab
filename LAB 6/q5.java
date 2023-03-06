@@ -1,31 +1,40 @@
-// Write a program in java using inheritance to show how to call the base class parameterized constructors from the derived class using super.
+//Program on Dynamic Method Dispatch: created two classes: Phone & SmartPhone & Cellular Phone. The Phone is the parent class and the SmartPhone & CellularPhone are the child classes. The method on() of the parent class is overridden inside the child classes.
+//Demonstrate Dynamic Method Dispatch.
 
-import java.util.Scanner;
-public class q5 {
-    public static class base{
-        int a;
-        base(int a){
-            this.a = a;
-        }
-    }
-    public static class derived extends base{
-        int b;
-        derived(int a, int b){
-            super(a);
-            this.b = b;
-        }
-        void print(){
-            System.out.println("a : " + a + " " + " b : " + b);
-        }
-    }
-    public static void main(String[] args) {
-        System.out.println("Enter the value of a : ");
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt(); // cin >> a;
-        System.out.println("Enter the value of b : ");
-        int b = sc.nextInt();
+import java.io.*;
+import java.util.*;
+import java.lang.Math;
 
-        derived d = new derived(a, b);
-        d.print();
+public class q5
+{
+    public static void main(String[] args) throws IOException
+    {
+        Phone p = new Phone();
+        SmartPhone s = new SmartPhone();
+        CellularPhone c = new CellularPhone();
+        p.on();
+        s.on();
+        c.on();
+    }
+}   
+class Phone
+{
+    public void on()
+    {
+        System.out.println("Phone is on");
+    }
+}
+class SmartPhone extends Phone
+{
+    public void on()
+    {
+        System.out.println("SmartPhone is on");
+    }
+}
+class CellularPhone extends Phone
+{
+    public void on()
+    {
+        System.out.println("CellularPhone is on");
     }
 }
