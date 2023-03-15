@@ -1,6 +1,3 @@
-// Write a program in java using inheritance to show how to call 
-// the base class parameterized constructors from the derived class using super. 
-// Consider the base class is “Shape2D” for rectangle and define subclass “Shape3D” for cube.
 
 import java.util.Scanner;
 

@@ -1,19 +1,29 @@
-// What is the correct output of the following program? 
-class Test {
-    static int x = 2;
+// wap to use final keyword with variable and method and class and try to change the value of final variable and method and class
 
-    public static void main(String[] args) {
-        Test objl = new Test();
-        Test obj2 = new Test();
-        obj1.x = 5;
-        obj2.x = 10;
-        System.out.println(obj1.x + obj2.x + Test.x);
+class Test1
+{
+    final int a = 10;
+    final void show()
+    {
+        System.out.println("Hello 1");
+    }
+    
+}
+
+class Test2 extends Test
+{
+    void show()
+    {
+        System.out.println("Hello 2");
     }
 }
 
-// A. 17
-// B. 0
-// C. 30
-// D. 6
-
-// Answer: C
+class Test
+{ 
+    public static void main(String[] args)
+    {
+        Test2 t = new Test2();
+        // call base class method
+        t.show();
+    }
+}
