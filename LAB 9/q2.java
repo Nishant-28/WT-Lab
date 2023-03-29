@@ -39,7 +39,7 @@ class q2
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
-        Account a = new Account(1000);
+        Account a = new Account(500);
         System.out.print("Enter amount to deposit: ");
         int d = sc.nextInt();
         a.deposit(d);
