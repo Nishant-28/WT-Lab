@@ -61,6 +61,7 @@ class q3
         int m = sc.nextInt();
         System.out.print("Enter seconds: ");
         int s = sc.nextInt();
+        sc.close();
         try
         {
             Time t = new Time(h, m, s);

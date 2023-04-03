@@ -59,5 +59,8 @@ class q5{
                 System.out.println(e);
             }
         }
+        sc.close();
     }
 }
+
+// 

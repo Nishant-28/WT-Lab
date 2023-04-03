@@ -17,6 +17,7 @@ class q1
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int n = sc.nextInt();
+        sc.close();
         try
         {
             ProcessInput(n);

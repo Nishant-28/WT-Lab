@@ -8,9 +8,10 @@ class q8
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int n = sc.nextInt();
+        sc.close();
         try{
             if(n < 0)
-                throw new NegativeNumberException("Number is negative");
+                throw new NegativeNumberException("Number is negative ");
             else
                 System.out.println("Number is positive");
         }

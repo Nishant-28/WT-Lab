@@ -1,4 +1,4 @@
-// Write a java program to justify “A subclass exception must appear before super-class exception”.
+// Write a java program to justify “A subclass exception  must appear before super-class exception” 
 
 import java.util.Scanner;
 
@@ -13,6 +13,7 @@ class q6{
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int n = sc.nextInt();
+        sc.close();
         try{
             if(n < 0)
                 throw new NegativeNumberException("Number is negative");

@@ -45,6 +45,7 @@ class q2
         a.deposit(d);
         System.out.print("Enter amount to withdraw: ");
         int w = sc.nextInt();
+        sc.close();
         try
         {
             a.withdraw(w);

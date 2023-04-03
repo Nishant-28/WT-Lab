@@ -7,12 +7,7 @@ class q7
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter size of array: ");
-        int n = sc.nextInt();
-        int[] arr = new int[n];
-        System.out.println("Enter elements of array: ");
-        for(int i = 0; i < n; i++)
-            arr[i] = sc.nextInt();
+        int[] arr = {12, 26, 34, 44, 58, 62, 74, 82, 96, 100};
         System.out.print("Enter index of element to be displayed: ");
         int index = sc.nextInt();
         try
@@ -23,5 +18,6 @@ class q7
         {
             System.out.println(e);
         }
+        sc.close();
     }
 }
