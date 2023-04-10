@@ -1,4 +1,3 @@
-// Write a java program to justify “A subclass exception  must appear before super-class exception” 
 
 import java.util.Scanner;
 
