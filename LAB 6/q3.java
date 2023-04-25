@@ -14,10 +14,13 @@ class Shape
     }
 }
 
-class Rectangle extends Shape
+class Rectangle extends Shape implements java.awt.Shape
 {
     Rectangle(int l, int b){
         super(l, b);
+    }
+
+    public Rectangle(int i, int j, int k, int l) {
     }
 }
 

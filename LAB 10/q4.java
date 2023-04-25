@@ -13,7 +13,7 @@ public class q4 {
         FileReader fr = new FileReader(file1);
         FileWriter fw = new FileWriter(file2);
         int ch;
-        while ((ch = fr.read()) != -1) {
+        while ((ch = fr.read()) != -1) { // -1 is the EOF character 
             fw.write(ch);
         }
         fr.close();

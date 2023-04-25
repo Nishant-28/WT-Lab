@@ -12,8 +12,8 @@ public class q1 {
     {  
         double t;  
         double sqrtroot=num/2;
-        do   
-        {  
+        do
+        {
             t=sqrtroot;  
             sqrtroot=(t+(num/t))/2;  
         }   
